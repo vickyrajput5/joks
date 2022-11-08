@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joks</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-content: center;
+            background-color: rgb(44, 41, 41);
+        }
+        #container{
+            width: 500px;
+            height: 220px;
+            background-color: rgb(27, 31, 31);
+            box-shadow: -1px -3px 12px -7px rgba(0,0,0,0.75);
+            padding: 40px;
+       
+            position: relative;
+        }
+        #container h3{
+            text-align: center;
+            font-size: 25px;
+            font-family: 'Permanent Marker', cursive;
+            color: #ff0;
+            
+        }
+        .joks{
+            font-size: 16px;
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            font-weight: 600;
+            color: rgb(226, 226, 34);
+        }
+        .btn{
+            position: absolute;
+            bottom: 5px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Permanent Marker', cursive;
+            padding: 15px 30px;
+            border-radius:10px;
+            border: none;
+            background-color: #ff0;
+            color: black;
+            margin: 20px 0px 0px 0px;
+            cursor: pointer;
+            transition: 0.5s all;
+        }
+        .btn:hover{
+            background-color: aliceblue;
+            color: #000;
+            transition: 0.5s all;
+        }
+        @media (max-width:650px) {
+            #container{
+                width: 85%;
+                height: 250px;
+                margin: auto;
+                padding: 20px;
+            }
+            .btn{
+                padding: 15px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h3>Best Joks</h3>
+        <div id="joks" class="joks">
+            Awesome joks is loading....
+        </div>
+        <button id="joks-btn" class="btn">Next Joke</button>
+    </div>
+    <script  src="joks.js"></script>
+</body>
+</html>
